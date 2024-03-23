@@ -1,0 +1,12 @@
+version: "3"
+
+tasks:
+  dev:
+    aliases: ["d"]
+    cmds:
+      - astro dev
+  build:
+    aliases: ["b"]
+    cmds:
+      - astro build
+      - astro preview
