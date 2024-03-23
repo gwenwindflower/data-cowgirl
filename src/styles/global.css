@@ -60,8 +60,6 @@ body {
 
 main {
   width: 720px;
-  /*TODO: figure out the right way to do this*/
-  /* min-height: calc(100vh - 16em); */
   max-width: calc(100% - 2em);
   margin: auto;
   padding: 3em 1em;
@@ -108,10 +106,12 @@ b {
 }
 
 a {
+  transition: color 0.2s;
   color: var(--pink);
 }
 
 a:hover {
+  transition: color 0.2s;
   color: var(--mauve);
 }
 
