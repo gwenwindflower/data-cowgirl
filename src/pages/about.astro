@@ -3,60 +3,25 @@ import Layout from '../layouts/BlogPost.astro';
 ---
 
 <Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage="/blog-placeholder-about.jpg"
+	title="About this site"
+	description="About this site's design and development"  
+	pubDate={new Date('March 23, 2024')}
 >
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+    Looking for more about me? Well, sorry, but this page is all about the site itself. Between my GitHub, LinkedIn, and blog posts, I genuinely think you'll be able to get a good sense of what I'm about. This site on the other hand...what's the story there? If you're interested in that, then read on!
 	</p>
+  <h2>The journey to Astro</h2>
+  <p>
+    I set out to build a new site after having an epiphany: you don't need a giant TypeScript framework to have a blog, you can just fire off a `vi index.html` in your terminal and start typing. So I did. I wrote raw CSS for the first time in ages, and I had an absolute blast. Once I got the design vibes down though, I needed to write content. I knew I wanted to write Markdown for that and convert it, so I looked into a few different options, from static site generators to Python scripts wrapping Pandoc. I fought against using a full-fledged framework for awhile, until I found myself reading the Astro docs. It was perfect! This is what I wanted!
+  </p>
+  <p>
+    Like SvelteKit, which I built my previous homepage in, Astro as a framework celebrates HTML and CSS over the more TypeScript-heavy React/NextJS approach. Uniquely, Astro seems to take equal inspiration from Markdown as well, allowing you to write TS in frontmatter style blocks. It also brings in modern TypeScript tooling for convenience when using common patterns like blogging, such as hot reloading, templating, component-scoped styles, etc. It's a perfect blend of the old and the new. On the technical side, because it compiles as much as possible down to static content, with 'islands' of interactive TypeScript where necessary, it also performs incredibly well.
+  </p>
+  <p>The last thing I'll shout out in my praise of Astro is its CLI. It's incredibly delightful and powerful, and probably <b>the</b> best CLI I've ever used in terms of UX.
+  </p>
+  <h2>Terminal velocity</h2>
+  <p>
+    So I'm building in Astro, what do I then build? I decided, knowing that quick, code-focused TIL posts were the primary goal of this blog, that I would try to emulate my terminal and Neovim setup as much as possible. That meant instant loading, Catppuccin Frappe color theme, and Ellograph CF font. That's what you see here! I was delighted to find that because Astro uses Shiki for syntax highlighting, I could use the same Catppuccin Frappe theme I used in the design for code blocks for a seamless look. This is my favorite aspect of the site! If you're building a code-focused blog, I highly suggest considering a similar unification of the site styles and the syntax highlighting, I think it's a great look.
+  </p>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
-
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
-
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
-
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
 </Layout>
