@@ -1,34 +1,67 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import Layout from "../layouts/BlogPost.astro";
 ---
 
 <Layout
-	title="About this site"
-	description="About this site's design and development"  
-	pubDate={new Date('March 23, 2024')}
+  title="About this site"
+  description="About this site's design and development"
+  pubDate={new Date("March 23, 2024")}
 >
-	<p>
-    Looking for more about me? Well, sorry, but this page is all about the site itself. Between my GitHub, LinkedIn, and blog posts, I genuinely think you'll be able to get a good sense of what I'm about. This site on the other hand...what's the story there? If you're interested in that, then read on!
-	</p>
+  <p>
+    Looking for more about me? Well, sorry, but this page is all about the site
+    itself. Between my GitHub, LinkedIn, and blog posts, I genuinely think
+    you'll be able to get a good sense of what I'm about. This site on the other
+    hand...what's the story there? If you're interested in that, then read on!
+  </p>
   <h2>The journey to Astro</h2>
   <p>
-    I set out to build a new site after having an epiphany: you don't need a giant TypeScript framework to have a blog, you can just fire off a `vi index.html` in your terminal and start typing. So I did. I wrote raw CSS for the first time in ages, and I had an absolute blast. Once I got the design vibes down though, I needed to write content. I knew I wanted to write Markdown for that and convert it, so I looked into a few different options, from static site generators to Python scripts wrapping Pandoc. I fought against using a full-fledged framework for awhile, until I found myself reading the Astro docs. It was perfect! This is what I wanted!
+    I set out to build a new site after having an epiphany: you don't need a
+    giant TypeScript framework to have a blog, you can just fire off a `vi
+    index.html` in your terminal and start typing. So I did. I wrote raw CSS for
+    the first time in ages, and I had an absolute blast. Once I got the design
+    vibes down though, I needed to write content. I knew I wanted to write
+    Markdown for that and convert it, so I looked into a few different options,
+    from static site generators to Python scripts wrapping Pandoc. I fought
+    against using a full-fledged framework for awhile, until I found myself
+    reading the Astro docs. It was perfect! This is what I wanted!
   </p>
   <p>
-    Like SvelteKit, which I built my previous homepage in, Astro as a framework celebrates HTML and CSS over the more TypeScript-heavy React/NextJS approach. Uniquely, Astro seems to take equal inspiration from Markdown as well, allowing you to write TS in frontmatter style blocks. It also brings in modern TypeScript tooling for convenience when using common patterns like blogging, such as hot reloading, templating, component-scoped styles, etc. It's a perfect blend of the old and the new. On the technical side, because it compiles as much as possible down to static content, with 'islands' of interactive TypeScript where necessary, it also performs incredibly well.
+    Like SvelteKit, which I built my previous homepage in, Astro as a framework
+    celebrates HTML and CSS over the more TypeScript-heavy React/NextJS
+    approach. Uniquely, Astro seems to take equal inspiration from Markdown as
+    well, allowing you to write TS in frontmatter style blocks. It also brings
+    in modern TypeScript tooling for convenience when using common patterns like
+    blogging, such as hot reloading, templating, component-scoped styles, etc.
+    It's a perfect blend of the old and the new. On the technical side, because
+    it compiles as much as possible down to static content, with 'islands' of
+    interactive TypeScript where necessary, it also performs incredibly well.
   </p>
-  <p>The last thing I'll shout out in my praise of Astro is its CLI. It's incredibly delightful and powerful, and probably <b>the</b> best CLI I've ever used in terms of UX.
+  <p>
+    The last thing I'll shout out in my praise of Astro is its CLI. It's
+    incredibly delightful and powerful, and probably <b>the</b> best CLI I've ever
+    used in terms of UX.
   </p>
   <h2>Terminal velocity</h2>
   <p>
-    So I'm building in Astro, what do I then build? I decided, knowing that quick, code-focused TIL posts were the primary goal of this blog, that I would try to emulate my terminal and Neovim setup as much as possible. That meant instant loading, Catppuccin Frappe color theme, and Ellograph CF font. That's what you see here! I was delighted to find that because Astro uses Shiki for syntax highlighting, I could use the same Catppuccin Frappe theme I used in the design for code blocks for a seamless look. This is my favorite aspect of the site! If you're building a code-focused blog, I highly suggest considering a similar unification of the site styles and the syntax highlighting, I think it's a great look.
+    So I'm building in Astro, what do I then build? I decided, knowing that
+    quick, code-focused TIL posts were the primary goal of this blog, that I
+    would try to emulate my terminal and Neovim setup as much as possible. That
+    meant instant loading, Catppuccin Frappe color theme, and Ellograph CF font.
+    That's what you see here! I was delighted to find that because Astro uses
+    Shiki for syntax highlighting, I could use the same Catppuccin Frappe theme
+    I used in the design for code blocks for a seamless look. This is my
+    favorite aspect of the site! If you're building a code-focused blog, I
+    highly suggest considering a similar unification of the site styles and the
+    syntax highlighting, I think it's a great look.
   </p>
   <h2>What's next?</h2>
   <p>
-    I'm really happy with how the site turned out, but there's always more to do. Here's what's on my list:
+    I'm really happy with how the site turned out, but there's always more to
+    do. Here's what's on my list:
     <ul>
       <li>Light mode based on Catppuccin Latte</li>
       <li>Fuzzy filtering searh bar for blogs when there's more content</li>
       <li>Content Collection of book notes from my previous site</li>
     </ul>
+  </p>
 </Layout>
