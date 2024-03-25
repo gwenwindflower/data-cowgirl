@@ -1,36 +1,61 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { Code } from 'astro:components';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { Code } from "astro:components";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
     <main>
-      <h1><span>🤠</span>Howdy!</h1>
-      <p>My name is Gwen, but everybody calls me Winnie. This is my blog: <code>data cowgirl</code>.</p>
-      <p>I'm a software developer, analyst, writer, and creative. I <i>love</i> to learn and share.
-      I try to think about things deeply from first principles (<a href="/blog/what-is-a-pattern">like, what <i>is</i> a pattern, really?</a>),
-      but also I'm <a href="/blog/on-bimbo-tactics">unabashedly a bimbo</a> and like to <a href="/blog/winmeme-archive">make memes.</a></p>
-      <p>I write about everything from <a href="/blog/sql-design-patterns">SQL</a> to the power of <a href="/blog/intention-is-all-you-need">intentionality in data work</a>.</p>
+      <h1>
+        <img
+          src="/favicon.png"
+          width="100px"
+          height="100px"
+          alt="Icon of vintage mac computer"
+        />Howdy!
+      </h1>
+      <p>
+        My name is Gwen, but everybody calls me Winnie. This is my blog: <code
+          >data cowgirl</code
+        >.
+      </p>
+      <p>
+        I'm a software developer, analyst, writer, and creative. I <i>love</i> to
+        learn and share. I try to think about things deeply from first principles
+        (<a href="/blog/what-is-a-pattern"
+          >like, what <i>is</i> a pattern, really?</a
+        >), but also I'm <a href="/blog/on-bimbo-tactics">unabashedly a bimbo</a
+        > and like to <a href="/blog/winmeme-archive">make memes.</a>
+      </p>
+      <p>
+        I write about everything from <a href="/blog/sql-design-patterns">SQL</a
+        > to the power of <a href="/blog/intention-is-all-you-need"
+          >intentionality in data work</a
+        >.
+      </p>
       <p>I'm glad you're here!</p>
-        <Code lang='sql' theme='catppuccin-frappe' wrap  code={`select * from learning
+      <Code
+        lang="sql"
+        theme="catppuccin-frappe"
+        wrap
+        code={`select * from learning
 where 
   powered_by = 💗+🧋 and
   author = 'winnie' and
   crafted_with = '👩🏻‍🚀 astro.build'
 order by date desc;
-        `}/>
-      </code>
+        `}
+      />
     </main>
 
     <Footer />
-	</body>
+  </body>
 </html>

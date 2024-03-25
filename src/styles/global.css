@@ -79,8 +79,8 @@ h6 {
 
 h1 {
   font-size: 3.052em;
-  span {
-    font-style: normal;
+  img {
+    vertical-align: middle;
   }
 }
 
