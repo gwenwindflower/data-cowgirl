@@ -80,7 +80,9 @@ h6 {
 h1 {
   font-size: 3.052em;
   img {
-    vertical-align: middle;
+    height: 2em;
+    width: 2em;
+    vertical-align: -0.5em;
   }
 }
 
