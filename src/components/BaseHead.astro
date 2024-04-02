@@ -14,7 +14,7 @@ import { join } from "node:path";
 import { AstroFont } from "astro-font";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -45,7 +45,7 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
             process.cwd(),
             "public",
             "fonts",
-            "EllgographCFNerdFont-Thin.otf",
+            "EllographCFNerdFont-Thin.otf",
           ),
         },
         {
@@ -55,7 +55,7 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
             process.cwd(),
             "public",
             "fonts",
-            "EllgographCFNerdFont-Thin.Italic.otf",
+            "EllographCFNerdFont-ThinItalic.otf",
           ),
         },
         {
@@ -65,7 +65,7 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
             process.cwd(),
             "public",
             "fonts",
-            "EllographCFNerdFont-Light.ttf",
+            "EllographCFNerdFont-Light.otf",
           ),
         },
         {
@@ -75,7 +75,7 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
             process.cwd(),
             "public",
             "fonts",
-            "EllographCFNerdFont-LightItalic.ttf",
+            "EllographCFNerdFont-LightItalic.otf",
           ),
         },
       ],
